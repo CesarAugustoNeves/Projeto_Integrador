@@ -30,5 +30,19 @@ while passou == False:
         
 pv = cp / (1 - (cf + cv + iv + ml) / 100)
 
+receita = pv - cp
 
-print(pv) 
+outrosCustos = cf + cv + iv
+
+rentabilidade = receita - outrosCustos
+
+print(f"Descrição                            Valor    %")
+print(f"A. Preço de Venda                    {pv}     {pv/100}")
+print(f"B. Custo de Aquisição (fornecedor)   {cp}     {cp/100}")
+print(f"C. Receita Bruta (A-B)               {receita} {receita/ 100}")
+print(f"D. Custo Fixo/Administrativo         {cf}     {cf/100}")
+print(f"E. Comissão de Vendas                {cv}     {cv/100}")
+print(f"F. Impostos                          {iv}     {iv/100}")
+print(f"G. Outros custos (D+E+F)        {outrosCustos} {outrosCustos / 100}")
+print(f"H. Rentabilidade (C - G)        {rentabilidade} {rentabilidade/ 100}")
+
