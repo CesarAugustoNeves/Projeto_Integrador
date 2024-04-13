@@ -36,6 +36,8 @@ outrosCustos = cf + cv + iv
 
 rentabilidade = receita - outrosCustos
 
+lucro = rentabilidade / 100
+
 print(f"Descrição                            Valor    %")
 print(f"A. Preço de Venda                    {pv}     {pv/100}")
 print(f"B. Custo de Aquisição (fornecedor)   {cp}     {cp/100}")
@@ -46,3 +48,14 @@ print(f"F. Impostos                          {iv}     {iv/100}")
 print(f"G. Outros custos (D+E+F)        {outrosCustos} {outrosCustos / 100}")
 print(f"H. Rentabilidade (C - G)        {rentabilidade} {rentabilidade/ 100}")
 
+
+if lucro < 0:
+    print("O seu lucro é menor do que 0, logo você está em PREJUÍZO!")
+elif lucro == 0:
+    print("O seu lucro é de 0%, logo você está em EQUILÍBRIO")
+elif lucro > 0 and lucro < 10 / 100:
+    print("O seu lucro está entre 0 e 10%, logo ele é BAIXO")
+elif lucro > 10/100 and lucro < 20/100:
+    print("O seu lucro está entre 10% e 20%, logo ele é MÉDIO")
+elif lucro > 20 / 100:
+    print("O seu lucro é maior que 20%, logo ele é ALTO")
