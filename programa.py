@@ -39,17 +39,20 @@ outrosCustos = (cf / 100 * pv) + (cv / 100 * pv) + (iv / 100 * pv)
 
 rentabilidade = receita - outrosCustos
 
+
+
+
 lucro = rentabilidade / 100
 
 print(f"Descrição                            Valor    %")
-print(f"A. Preço de Venda                    {pv}     {(pv / pv) * 100}%")
-print(f"B. Custo de Aquisição (fornecedor)   {cp}     {(cp/ pv) * 100}%")
-print(f"C. Receita Bruta (A-B)               {receita} {(receita / pv) * 100}%")
-print(f"D. Custo Fixo/Administrativo         {cf / 100 * pv}    {cf}%")
-print(f"E. Comissão de Vendas                {cv/ 100 * pv}     {cv}%")
-print(f"F. Impostos                          {iv/ 100 * pv}     {iv}%")
-print(f"G. Outros custos (D+E+F)        {outrosCustos} {(outrosCustos / pv) * 100}%")
-print(f"H. Rentabilidade (C - G)        {rentabilidade} {(rentabilidade/ pv) * 100}%")
+print(f"A. Preço de Venda                    {round(pv, 2)}   {round((pv / pv) * 100, 2)}%")
+print(f"B. Custo de Aquisição (fornecedor)   {round(cp, 2)}   {round((cp/ pv) * 100, 2)}%")
+print(f"C. Receita Bruta (A-B)               {round(receita, 2)}   {round((receita / pv) * 100, 2)}%")
+print(f"D. Custo Fixo/Administrativo         {round(cf / 100 * pv, 2)}   {round(cf, 2)}%")
+print(f"E. Comissão de Vendas                {round(cv/ 100 * pv, 2)}   {round(cv, 2)}%")
+print(f"F. Impostos                          {round(iv/ 100 * pv, 2)}   {round(iv, 2)}%")
+print(f"G. Outros custos (D+E+F)             {round(outrosCustos, 2)} {round((outrosCustos / pv) * 100, 2)}%")
+print(f"H. Rentabilidade (C - G)             {round(rentabilidade, 2)} {round((rentabilidade/ pv) * 100, 2)}%")
 
 
 if lucro < 0:
