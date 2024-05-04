@@ -28,12 +28,12 @@ while passou == False:
     else:
         passou = True
         
-<<<<<<< HEAD
+
 pv = cp / (1 - (cf + cv + iv + ml) / 100)
 
 
 print(pv) 
-=======
+
 
 
 
@@ -71,4 +71,4 @@ elif lucro > 10/100 and lucro < 20/100:
     print("O seu lucro está entre 10% e 20%, logo ele é MÉDIO")
 elif lucro > 20 / 100:
     print("O seu lucro é maior que 20%, logo ele é ALTO")
->>>>>>> f46475acc92987fa1a64f1d061558022f5d640cd
+
