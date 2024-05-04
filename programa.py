@@ -12,7 +12,7 @@
 
 #Implementações da Versão 2.0 VVVVV
 
-#Faremos uma Integração do código em Python com um Banco de Dados SQL
+#Faremos uma Integração do código em Python com um Banco de Dados SQL.
 
 passou = False
 
