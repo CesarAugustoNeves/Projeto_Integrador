@@ -10,6 +10,10 @@
 
 # Todos esses valores irão para uma fórmula afim de calcular o preço de venda (PV)
 
+#Implementações da Versão 2.0 VVVVV
+
+#Faremos uma Integração do código em Python com um Banco de Dados SQL
+
 passou = False
 
 while passou == False:
