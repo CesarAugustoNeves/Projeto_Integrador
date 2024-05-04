@@ -10,6 +10,22 @@
 
 # Todos esses valores irão para uma fórmula afim de calcular o preço de venda (PV)
 
+import mysql.connector
+
+db = mysql.connector.connect(
+    host = "127.0.0.1",
+    user = "root",
+    password = "codifique")
+
+print(db.is_connected()) #mostra se conectou
+
+cursor = db.cursor()
+
+cursor.execute("describe projeto_integrador_pucc.PRODUTOS")
+
+for i in cursor:
+    print(i) #printando o que o sql retornou do execute
+
 passou = False
 
 while passou == False:
