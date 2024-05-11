@@ -10,6 +10,10 @@
 
 # Todos esses valores irão para uma fórmula afim de calcular o preço de venda (PV)
 
+
+#Versão 2.0 - Puxar os dados do banco de dados por meio do código inserido pelo usuário, então mostrar os dados
+#e então realizar os cálculos e classificar o lucro
+
 import mysql.connector
 
 db = mysql.connector.connect(
@@ -30,17 +34,10 @@ passou = False
 
 while passou == False:
     try:
-
         codigo = int(input("Insira o código do produto: "))
-        nome = str(input("Insira o nome do produto: "))
-        descricao = str(input("Insira a descrição do produto: "))
-        cp = float(input("Insira o custo do produto (CP): "))
-        cf = float(input("Insira o custo fixo (CF) do produto: "))
-        cv = float(input("Insira o valor de comissão de vendas (CV) do produto: "))
-        iv = float(input("Insira o custo dos impostos do produto (IV): "))
-        ml = float(input("Insira o valor de rentabilidade do produto (ML): "))
+        
     except ValueError:
-        print("Insira os valores corretos, sendo um número inteiro em código, strings em nome e descrição, floatpoint nos demais")
+        print("O Codigo deve ser um número inteiro")
     else:
         passou = True
         
