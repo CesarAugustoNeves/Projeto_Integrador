@@ -159,17 +159,3 @@ calcularLucro(dados[0]) #Se passar a lista inteira dará erro, usar dados[i] par
 
 
 
-    
-if lucro < 0:
-    print("O seu lucro é menor do que 0, logo você está em PREJUÍZO!")
-elif lucro == 0:
-    print("O seu lucro é de 0%, logo você está em EQUILÍBRIO")
-elif lucro > 0 and lucro < 10 / 100:
-    print("O seu lucro está entre 0 e 10%, logo ele é BAIXO")
-elif lucro > 10/100 and lucro < 20/100:
-    print("O seu lucro está entre 10% e 20%, logo ele é MÉDIO")
-elif lucro > 20 / 100:
-    print("O seu lucro é maior que 20%, logo ele é ALTO")
-
-
-
