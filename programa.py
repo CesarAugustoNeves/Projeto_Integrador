@@ -10,6 +10,14 @@
 
 # Todos esses valores irão para uma fórmula afim de calcular o preço de venda (PV)
 
+<<<<<<< HEAD
+=======
+#Implementações da Versão 2.0 VVVVV
+
+#Faremos uma Integração do código em Python com um Banco de Dados SQL.
+
+passou = False
+>>>>>>> @{-1}
 
 #Versão 2.0 - Puxar os dados do banco de dados por meio do código inserido pelo usuário, então mostrar os dados
 #e então realizar os cálculos e classificar o lucro
