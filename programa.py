@@ -10,15 +10,13 @@
 
 # Todos esses valores irão para uma fórmula afim de calcular o preço de venda (PV)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
+
 #Implementações da Versão 2.0 VVVVV
 
 #Faremos uma Integração do código em Python com um Banco de Dados SQL.
 
-passou = False
->>>>>>> @{-1}
+
+
 
 #Versão 2.0 - Puxar os dados do banco de dados por meio do código inserido pelo usuário, então mostrar os dados
 #e então realizar os cálculos e classificar o lucro
@@ -53,7 +51,7 @@ def qualCodigo():
             passou = True
     return codigo
 
-=======
+
 passou = False
 
 while passou == False:
@@ -72,12 +70,11 @@ while passou == False:
     else:
         passou = True
         
->>>>>>> origin
+
 pv = cp / (1 - (cf + cv + iv + ml) / 100)
 
 
 print(pv) 
-<<<<<<< HEAD
 
 
 
@@ -149,7 +146,7 @@ def calcularLucro(dados):
 # Definições acima ^^^
 
 
-<<<<<<< HEAD
+
 codigo = qualCodigo()
 
 dados = executarDb(f"SELECT * FROM PRODUTOS WHERE CODIGO = {codigo}", True) #Executando o comando no DB e depois usando fetchall()
@@ -163,7 +160,6 @@ calcularLucro(dados[0]) #Se passar a lista inteira dará erro, usar dados[i] par
 
 
     
-=======
 if lucro < 0:
     print("O seu lucro é menor do que 0, logo você está em PREJUÍZO!")
 elif lucro == 0:
@@ -175,6 +171,5 @@ elif lucro > 10/100 and lucro < 20/100:
 elif lucro > 20 / 100:
     print("O seu lucro é maior que 20%, logo ele é ALTO")
 
->>>>>>> Develop
-=======
->>>>>>> origin
+
+
