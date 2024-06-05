@@ -198,7 +198,7 @@ def consultar():
             print(f"Impostos (IV) = {item[6]}")
             print(f"Rentabiliadde (ML) = {item[7]}\n")
 
-        
+        calcularLucro(dados[0])
 
         
 
