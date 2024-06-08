@@ -362,7 +362,7 @@ menu = ["1 - Inserir Dados", \
         "5 - Excluir Dados", \
         "6 - Sair do Programa"]
 
-<<<<<<< HEAD
+
 opcao = 999
 
 while opcao != 6:
