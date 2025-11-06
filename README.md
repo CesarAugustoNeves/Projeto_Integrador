@@ -1,1 +1,1 @@
-Repositório para a matéria de Projeto Integrador
+Repositório para o Projeto Integrador 1º Semestre
